@@ -22,7 +22,7 @@ export function About() {
         <SectionReveal delay={0.1}>
           <div className="space-y-4 text-base sm:text-lg text-muted-foreground leading-relaxed mb-10">
             <p>
-              Hi, I&apos;m Ayers — a Computing Science graduate obsessed with finding the right solutions to problems I actually face. I believe that great software starts with understanding the people using it and the problem worth solving, not just something that works.
+              Hi, I&apos;m Ayers — a Computing Science graduate passionate in finding the right solutions to problems I actually face. I believe that great software starts with understanding the people using it and the problem worth solving, not just something that works.
             </p>
             <p>
               Apart from work, you can find me at the gym, exploring new places to eat, or cooking!
