@@ -102,7 +102,7 @@ export function Hero() {
           {...fadeUp(0.4)}
           className="max-w-lg text-base text-muted-foreground sm:text-lg"
         >
-          I design and build software that actually matters.
+          I design and build software that matters.
         </motion.p>
 
         {/* Contact icon links */}

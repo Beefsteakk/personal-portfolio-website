@@ -5,7 +5,12 @@ import { useTheme } from "@/components/theme-provider";
 import { Moon, Sun, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const navLinks = ["About", "Projects", "Skills", "Education"];
+const navItems = [
+  { label: "About", id: "about" },
+  { label: "Portfolio", id: "projects" },
+  { label: "Skills", id: "skills" },
+  { label: "Education", id: "education" },
+];
 const sectionIds = ["hero", "about", "projects", "skills", "education"];
 
 export function Navbar() {
@@ -70,20 +75,19 @@ export function Navbar() {
 
           {/* Desktop nav links */}
           <nav className="hidden md:flex items-center gap-7 text-sm font-medium">
-            {navLinks.map((item) => {
-              const id = item.toLowerCase();
-              const isActive = activeSection === id;
+            {navItems.map((item) => {
+              const isActive = activeSection === item.id;
               return (
                 <a
-                  key={item}
-                  href={`#${id}`}
+                  key={item.id}
+                  href={`#${item.id}`}
                   className={`relative transition-colors duration-200 group ${
                     isActive
                       ? "text-primary"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
-                  {item}
+                  {item.label}
                   <span
                     className="absolute -bottom-0.5 left-0 h-px bg-primary transition-all duration-300"
                     style={{ width: isActive ? "100%" : "0%" }}
@@ -170,13 +174,12 @@ export function Navbar() {
                 boxShadow: "0 8px 32px color-mix(in oklch, var(--purple-glow) 50%, transparent)",
               }}
             >
-              {navLinks.map((item, i) => {
-                const id = item.toLowerCase();
-                const isActive = activeSection === id;
+              {navItems.map((item, i) => {
+                const isActive = activeSection === item.id;
                 return (
                   <motion.a
-                    key={item}
-                    href={`#${id}`}
+                    key={item.id}
+                    href={`#${item.id}`}
                     onClick={closeMenu}
                     initial={{ opacity: 0, x: -8 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -192,7 +195,7 @@ export function Navbar() {
                         isActive ? "bg-primary" : "bg-primary/40"
                       }`}
                     />
-                    {item}
+                    {item.label}
                   </motion.a>
                 );
               })}

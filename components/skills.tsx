@@ -50,8 +50,7 @@ export function Skills() {
                       whileInView={{ opacity: 1, scale: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: catIdx * 0.06 + skillIdx * 0.04, duration: 0.3 }}
-                      whileHover={{ scale: 1.06, y: -2 }}
-                      className="inline-flex items-center rounded-lg border border-border bg-card px-3 py-1.5 text-sm font-medium text-foreground transition-all duration-150 hover:border-primary/50 hover:text-primary hover:shadow-[0_2px_12px_var(--purple-glow)] cursor-default transition-theme"
+                      className="inline-flex items-center rounded-lg border border-border bg-card px-3 py-1.5 text-sm font-medium text-foreground cursor-default transition-theme"
                     >
                       {skill}
                     </motion.span>

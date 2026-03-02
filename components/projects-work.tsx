@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Github, ExternalLink, Briefcase, CalendarDays } from "lucide-react";
 import { SectionReveal } from "@/components/section-reveal";
@@ -66,10 +65,7 @@ export function ProjectsWork() {
         <div className="grid gap-5 sm:grid-cols-2 mb-20">
           {projects.map((p, i) => (
             <SectionReveal key={p.name} delay={i * 0.07}>
-              <motion.div
-                whileHover={{ y: -4 }}
-                className="group flex flex-col h-full rounded-2xl border border-border bg-card p-6 transition-all duration-200 hover:border-primary/50 hover:shadow-[0_4px_24px_var(--purple-glow)] transition-theme"
-              >
+              <div className="flex flex-col h-full rounded-xl border border-border bg-card p-6 transition-theme">
                 <div className="flex items-start justify-between gap-2 mb-3">
                   <h3 className="font-semibold text-foreground text-lg leading-tight">{p.name}</h3>
                   <div className="flex items-center gap-2 shrink-0 mt-0.5">
@@ -111,7 +107,7 @@ export function ProjectsWork() {
                     </Badge>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             </SectionReveal>
           ))}
         </div>
@@ -132,14 +128,11 @@ export function ProjectsWork() {
 
           {experience.map((job, i) => (
             <SectionReveal key={job.company} delay={i * 0.09}>
-              <motion.div
-                whileHover={{ y: -4 }}
-                className="group sm:pl-8 relative"
-              >
+              <div className="sm:pl-8 relative">
                 {/* Timeline dot */}
                 <span className="absolute left-0 top-3 hidden sm:flex h-3.5 w-3.5 rounded-full border-2 border-primary bg-background transition-theme" />
 
-                <div className="rounded-2xl border border-border bg-card p-6 transition-all duration-200 group-hover:border-primary/50 group-hover:shadow-[0_4px_24px_var(--purple-glow)] transition-theme">
+                <div className="rounded-xl border border-border bg-card p-6 transition-theme">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
                     <div className="flex items-center gap-2">
                       <Briefcase size={14} className="text-primary shrink-0" />
@@ -160,7 +153,7 @@ export function ProjectsWork() {
                     ))}
                   </ul>
                 </div>
-              </motion.div>
+              </div>
             </SectionReveal>
           ))}
         </div>

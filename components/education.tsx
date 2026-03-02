@@ -35,7 +35,7 @@ export function Education() {
         <div className="flex flex-col gap-5">
           {education.map((edu, i) => (
             <SectionReveal key={edu.degree} delay={i * 0.1}>
-              <div className="group flex gap-4 rounded-2xl border border-border bg-card p-6 transition-all duration-200 hover:border-primary/50 hover:shadow-[0_4px_24px_var(--purple-glow)] transition-theme">
+              <div className="flex gap-4 rounded-xl border border-border bg-card p-6 transition-theme">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent">
                   <GraduationCap size={18} className="text-primary" />
                 </div>
