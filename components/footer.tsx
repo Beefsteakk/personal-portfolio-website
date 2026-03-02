@@ -3,10 +3,10 @@
 import { Mail, Linkedin, Github, Phone } from "lucide-react";
 
 const contactLinks = [
-  { icon: Mail, label: "Email", href: "mailto:you@example.com" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/yourprofile" },
-  { icon: Github, label: "GitHub", href: "https://github.com/yourusername" },
-  { icon: Phone, label: "Phone", href: "tel:+10000000000" },
+  { icon: Mail, label: "Email", href: "mailto:ayersfjz@gmail.com" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/ayersfong/" },
+  { icon: Github, label: "GitHub", href: "https://github.com/Beefsteakk" },
+  { icon: Phone, label: "Phone", href: "tel:+6590488515" },
 ];
 
 export function Footer() {

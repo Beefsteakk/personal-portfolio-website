@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Mail, Linkedin, Github, Phone, Download } from "lucide-react";
 
@@ -15,22 +16,22 @@ const contactLinks = [
   {
     icon: Mail,
     label: "Email",
-    href: "mailto:you@example.com",
+    href: "mailto:ayersfjz@gmail.com",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://linkedin.com/in/yourprofile",
+    href: "https://www.linkedin.com/in/ayersfong/",
   },
   {
     icon: Github,
     label: "GitHub",
-    href: "https://github.com/yourusername",
+    href: "https://github.com/Beefsteakk",
   },
   {
     icon: Phone,
     label: "Phone",
-    href: "tel:+10000000000",
+    href: "tel:+6590488515",
   },
 ];
 
@@ -66,9 +67,16 @@ export function Hero() {
               background: "linear-gradient(135deg, var(--purple-accent), var(--purple-accent-soft))",
             }}
           >
-            {/* Photo area — replace this div with <Image> when you have a real photo */}
-            <div className="flex h-36 w-36 items-center justify-center rounded-full bg-card text-3xl font-bold text-primary sm:h-44 sm:w-44">
-              AF
+            <div className="h-40 w-40 overflow-hidden rounded-full sm:h-52 sm:w-52">
+              <Image
+                src="/ayers.png"
+                alt="Ayers Fong"
+                width={320}
+                height={320}
+                className="h-full w-full origin-center scale-[1.4] object-cover"
+                style={{ objectPosition: "center 50%" }}
+                priority
+              />
             </div>
           </div>
         </motion.div>

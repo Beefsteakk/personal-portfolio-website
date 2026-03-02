@@ -7,67 +7,43 @@ import { SectionReveal } from "@/components/section-reveal";
 
 const projects = [
   {
-    name: "Project Alpha",
+    name: "Sales & NLP Dashboard",
     description:
-      "A full-stack SaaS platform for managing team workflows with real-time collaboration, role-based access control, and analytics dashboards.",
-    stack: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Tailwind CSS"],
-    github: "https://github.com/yourusername/project-alpha",
-    live: "https://project-alpha.vercel.app",
-  },
-  {
-    name: "DevPulse CLI",
-    description:
-      "An open-source command-line tool for monitoring code quality metrics, generating reports, and integrating with CI pipelines.",
-    stack: ["Node.js", "TypeScript", "Jest", "Commander.js"],
-    github: "https://github.com/yourusername/devpulse-cli",
+      "Led an 8-month Agile project for Panasonic as Product Owner, delivering a suite of dashboards — 1 Sales dashboard, 2 NLP dashboards, and a combined view — that surface actionable insights from NLP-generated textual data.",
+    stack: ["Python", "Streamlit", "Agile / Scrum"],
+    github: "https://github.com/Beefsteakk/PSD-dashboard",
     live: null,
   },
   {
-    name: "AI Writing Assistant",
+    name: "Auralis — Mental Health App",
     description:
-      "A browser extension that integrates GPT-4 to help users draft, edit, and improve text directly inside any web form or editor.",
-    stack: ["React", "OpenAI API", "Chrome Extension API", "Tailwind CSS"],
-    github: "https://github.com/yourusername/ai-writer",
-    live: "https://chromewebstore.google.com",
-  },
-  {
-    name: "PortfolioKit",
-    description:
-      "A reusable Next.js + Tailwind template for developers to showcase their work with minimal setup and maximum customization.",
-    stack: ["Next.js", "Tailwind CSS", "Framer Motion", "MDX"],
-    github: "https://github.com/yourusername/portfoliokit",
-    live: "https://portfoliokit.dev",
+      "Designed and built a mental wellness mobile app featuring AI-powered recommendations via the Google Gemini API, mood analytics, YouTube-based meditation guidance, peer chatrooms, and secure video calls with licensed therapists.",
+    stack: ["Kotlin", "Jetpack Compose", "Firebase Firestore", "Google Gemini API"],
+    github: "https://github.com/Beefsteakk/Auralis",
+    live: null,
   },
 ];
 
 const experience = [
   {
-    company: "Acme Corp",
-    role: "Senior Software Engineer",
-    dates: "Jan 2023 – Present",
+    company: "Accenture · Internship",
+    role: "Technical Business Analyst",
+    dates: "Sep 2025 – Present · 6 mos",
     bullets: [
-      "Led migration of monolithic Rails app to Next.js microservices, reducing page load time by 62%.",
-      "Designed and implemented a real-time notification system serving 500K+ daily active users.",
-      "Mentored a team of 4 junior engineers, running weekly code reviews and architecture discussions.",
+      "Developed test scripts covering 27 user stories, translating acceptance criteria into clear, testable scenarios for sprint validation.",
+      "Collaborated with designers and developers across 3 sprints to refine 6 wireframes, test features, and communicate fixes.",
+      "Presented product demos to stakeholders at sprint reviews, addressing queries and ensuring alignment on project progress.",
+      "Facilitated end-to-end UAT for an MVP — creating test scripts, coordinating onsite sessions with clients, and working with developers on defect resolution to achieve sign-off.",
     ],
   },
   {
-    company: "Startup XYZ",
-    role: "Full-Stack Developer",
-    dates: "Jun 2021 – Dec 2022",
+    company: "Singapore Armed Forces (SAF)",
+    role: "Officer",
+    dates: "Jul 2021 – Jul 2023 · 2 yrs",
     bullets: [
-      "Built customer-facing dashboards in React and TypeScript, increasing user retention by 28%.",
-      "Architected REST and GraphQL APIs with Node.js, deployed on AWS ECS with zero-downtime deploys.",
-      "Collaborated closely with design team to ship a design system adopted across 3 product lines.",
-    ],
-  },
-  {
-    company: "Open Source / Freelance",
-    role: "Independent Developer",
-    dates: "2019 – 2021",
-    bullets: [
-      "Delivered 10+ client projects spanning e-commerce, SaaS, and portfolio sites.",
-      "Contributed to popular OSS libraries with 500+ GitHub stars.",
+      "Led a specialized team of 12 over 10 high-intensity reconnaissance operations.",
+      "Reduced dropout rate of outfield training by 20% as Safety Officer by enforcing strict safety protocols.",
+      "Contributed to achieving the Best Combat Unit award for ATEC evaluation in 2023 by optimizing team performance.",
     ],
   },
 ];

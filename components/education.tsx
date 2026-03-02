@@ -5,17 +5,17 @@ import { GraduationCap } from "lucide-react";
 
 const education = [
   {
-    degree: "B.S. in Computer Science",
-    institution: "State University",
-    year: "2019",
-    details: "Concentration in Software Engineering. Dean's List 2017–2019.",
+    degree: "Bachelor of Science (Honours) in Computing Science",
+    institution: "Singapore Institute of Technology",
+    year: "Expected Aug 2026",
+    details:
+      "Related Coursework: Data Structures & Algorithms, Object-Oriented Programming, Networks, Programming Methodology in C, Web Programming, Cloud Computing, Data Analytics.",
   },
   {
-    degree: "Relevant Coursework",
-    institution: "Online & Self-Directed",
-    year: "2019 – Present",
-    details:
-      "Full-Stack Web Development (Odin Project), Machine Learning (fast.ai), System Design (Grokking).",
+    degree: "Diploma in Accounting and Finance",
+    institution: "Temasek Polytechnic",
+    year: "Apr 2018 – Apr 2021",
+    details: "",
   },
 ];
 

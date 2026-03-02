@@ -5,7 +5,7 @@ import { MapPin, GraduationCap, Dumbbell } from "lucide-react";
 
 const highlights = [
   { icon: GraduationCap, label: "Computing Science Graduate" },
-  { icon: MapPin, label: "Based in [Your City]" },
+  { icon: MapPin, label: "Based in Singapore" },
   { icon: Dumbbell, label: "Gym · Food · Cooking" },
 ];
 
