@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/navbar";
 import { ScrollProgress } from "@/components/scroll-progress";
-import { ShootingStars } from "@/components/shooting-stars";
 import { Hero } from "@/components/hero";
 import { About } from "@/components/about";
 import { ProjectsWork } from "@/components/projects-work";
@@ -11,9 +10,6 @@ import { Footer } from "@/components/footer";
 export default function Home() {
   return (
     <div className="relative min-h-screen">
-      {/* Ambient shooting stars behind everything */}
-      <ShootingStars />
-
       {/* Scroll progress bar */}
       <ScrollProgress />
 
