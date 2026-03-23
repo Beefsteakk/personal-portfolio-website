@@ -128,7 +128,7 @@ export function Hero() {
         <motion.div {...fadeUp(0.6)}>
           <a
             href="/resume.pdf"
-            download
+            download="Ayers-Resume.pdf"
             className="group mt-2 inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3 text-sm font-semibold text-primary-foreground shadow-lg transition-all duration-200 hover:opacity-90 hover:shadow-[0_4px_20px_var(--purple-glow)] hover:-translate-y-0.5 active:translate-y-0"
           >
             <Download size={15} className="transition-transform duration-200 group-hover:-translate-y-0.5" />
